@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MovieBookingSystem.AppDBContexts;
+using MovieBookingSystem.DTOs;
 using MovieBookingSystem.Models;
 
 namespace MovieBookingSystem.Controllers
@@ -27,14 +28,14 @@ namespace MovieBookingSystem.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cast>>> GetCasts()
         {
-            return await _context.Casts.ToListAsync();
+            return await _context.Cast.ToListAsync();
         }
 
         // GET: api/Casts/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Cast>> GetCast(int id)
         {
-            var cast = await _context.Casts.FindAsync(id);
+            var cast = await _context.Cast.FindAsync(id);
 
             if (cast == null)
             {
@@ -78,10 +79,17 @@ namespace MovieBookingSystem.Controllers
         // POST: api/Casts
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Cast>> PostCast(Cast cast)
+        public async Task<ActionResult<Cast>> PostCast(CastDTO cast)
         {
-            _context.Casts.Add(cast);
-            await _context.SaveChangesAsync();
+            var casts =  new Cast { Description = cast.Description, Name = cast.Name, movies = new List<Movie>() };
+            _context.Cast.Add(casts);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex) { 
+                return BadRequest(ex.Message);
+            }
 
             return CreatedAtAction("GetCast", new { id = cast.Id }, cast);
         }
@@ -90,13 +98,13 @@ namespace MovieBookingSystem.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCast(int id)
         {
-            var cast = await _context.Casts.FindAsync(id);
+            var cast = await _context.Cast.FindAsync(id);
             if (cast == null)
             {
                 return NotFound();
             }
 
-            _context.Casts.Remove(cast);
+            _context.Cast.Remove(cast);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -104,7 +112,7 @@ namespace MovieBookingSystem.Controllers
 
         private bool CastExists(int id)
         {
-            return _context.Casts.Any(e => e.Id == id);
+            return _context.Cast.Any(e => e.Id == id);
         }
     }
 }

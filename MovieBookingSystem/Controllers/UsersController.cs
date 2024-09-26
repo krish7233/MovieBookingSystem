@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MovieBookingSystem.AppDBContexts;
 using MovieBookingSystem.Models;
+using MovieBookingSystem.Services;
 
 namespace MovieBookingSystem.Controllers
 {
@@ -15,10 +16,12 @@ namespace MovieBookingSystem.Controllers
     public class UsersController : ControllerBase
     {
         private readonly MovieBookingDBContext _context;
+        private readonly UserService _userService; 
 
-        public UsersController(MovieBookingDBContext context)
+        public UsersController(MovieBookingDBContext context, UserService userService)
         {
             _context = context;
+            _userService = userService;
         }
 
         // GET: api/Users
@@ -78,8 +81,7 @@ namespace MovieBookingSystem.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
-            _context.users.Add(user);
-            await _context.SaveChangesAsync();
+            await _userService.AddUser(user);
 
             return CreatedAtAction("GetUser", new { id = user.Id }, user);
         }

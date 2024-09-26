@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using MovieBookingSystem.DTOs;
+using System.Text.Json.Serialization;
 
 namespace MovieBookingSystem.Models
 {

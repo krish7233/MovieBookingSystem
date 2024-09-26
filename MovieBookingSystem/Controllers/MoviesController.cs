@@ -106,10 +106,32 @@ namespace MovieBookingSystem.Controllers
         // POST: api/Movies
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Movie>> PostMovie(Movie movie)
+        public async Task<ActionResult<Movie>> PostMovie(MovieDTO movieDTO)
         {
+            var movieCasts = new List<Cast>();
+            var movieBookings = new List<Booking>();
+
+            foreach(var cast in movieDTO.casts)
+            {
+                movieCasts.Add(new Cast { Id = cast.Id, Name = cast.Name, Description = cast.Description });
+            }
+
+            foreach(var booking in movieDTO.Bookings)
+            {
+                movieBookings.Add(new Booking { Id = booking.Id, UserId =  booking.UserId, BookingTime = booking.BookingTime });
+            }
+
+            var movie = new Movie() { Title = movieDTO.Title, Description = movieDTO.Description, ReleaseDate = movieDTO.ReleaseDate, Casts = movieCasts, Bookings = movieBookings};
+
             _context.movies.Add(movie);
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
             return CreatedAtAction(nameof(GetMovie), new { id = movie.Id }, movie);
         }
