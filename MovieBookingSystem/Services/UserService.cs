@@ -11,9 +11,28 @@ namespace MovieBookingSystem.Services
             _userRepository = userRepository;
         }
 
-        public async Task AddUser(User user)
+        public async Task<User> AddUser(User user)
         {
-            await _userRepository.SaveUser(user);
+            return await _userRepository.SaveUser(user);
+        }
+
+        public async Task<User> GetUserById(int id)
+        {
+            return await _userRepository.GetUserById(id);
+        }
+
+        public async Task<List<User>> GetAllUsers()
+        {
+            return await _userRepository.GetAllUsers();
+        }
+
+        public async Task<User> UpdateUser(User user)
+        {
+            return await _userRepository.UpdateUser(user);
+        }
+
+        public async Task<User> DeleteUser(int id) {
+            return await _userRepository.DeleteUser(id);
         }
     }
 }

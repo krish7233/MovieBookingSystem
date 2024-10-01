@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using MovieBookingSystem.AppDBContexts;
 using MovieBookingSystem.CustomMiddlewares;
+using MovieBookingSystem.Repositories;
+using MovieBookingSystem.Services;
 using System.Text;
 
 internal class Program
@@ -45,6 +47,10 @@ internal class Program
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+
+        builder.Services.AddScoped<UserService>();
+        builder.Services.AddScoped<UserRepository>();
 
         var app = builder.Build();
 

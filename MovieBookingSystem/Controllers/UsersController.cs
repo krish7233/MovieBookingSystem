@@ -15,27 +15,25 @@ namespace MovieBookingSystem.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly MovieBookingDBContext _context;
         private readonly UserService _userService; 
 
-        public UsersController(MovieBookingDBContext context, UserService userService)
+        public UsersController(UserService userService)
         {
-            _context = context;
             _userService = userService;
         }
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> Getusers()
+        public async Task<List<User>> Getusers()
         {
-            return await _context.users.ToListAsync();
+            return await _userService.GetAllUsers();
         }
 
         // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
-            var user = await _context.users.FindAsync(id);
+            var user = await _userService.GetUserById(id);
 
             if (user == null)
             {
@@ -55,11 +53,9 @@ namespace MovieBookingSystem.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(user).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
+                await _userService.UpdateUser(user);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -90,21 +86,22 @@ namespace MovieBookingSystem.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
-            var user = await _context.users.FindAsync(id);
+            var user = await _userService.GetUserById(id);
             if (user == null)
             {
                 return NotFound();
             }
 
-            _context.users.Remove(user);
-            await _context.SaveChangesAsync();
+            await _userService.DeleteUser(id);
 
             return NoContent();
         }
 
         private bool UserExists(int id)
         {
-            return _context.users.Any(e => e.Id == id);
+            User user = _userService.GetUserById(id).Result;
+
+            return user != null;
         }
     }
 }

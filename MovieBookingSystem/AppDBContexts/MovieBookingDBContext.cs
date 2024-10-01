@@ -14,7 +14,7 @@ namespace MovieBookingSystem.AppDBContexts
         public DbSet<Booking> bookings { get; set; }
         public DbSet<User> users { get; set; }
 
-        public DbSet<Cast> Casts { get; set; }
+        public DbSet<Cast> Cast { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

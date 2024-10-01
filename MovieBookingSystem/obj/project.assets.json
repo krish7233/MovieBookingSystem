@@ -7879,11 +7879,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\QSS\\source\\repos\\MovieBookingSystem\\MovieBookingSystem\\MovieBookingSystem.csproj",
+      "projectUniqueName": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\MovieBookingSystem.csproj",
       "projectName": "MovieBookingSystem",
-      "projectPath": "C:\\Users\\QSS\\source\\repos\\MovieBookingSystem\\MovieBookingSystem\\MovieBookingSystem.csproj",
+      "projectPath": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\MovieBookingSystem.csproj",
       "packagesPath": "C:\\Users\\QSS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\QSS\\source\\repos\\MovieBookingSystem\\MovieBookingSystem\\obj\\",
+      "outputPath": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\QSS\\AppData\\Roaming\\NuGet\\NuGet.Config",

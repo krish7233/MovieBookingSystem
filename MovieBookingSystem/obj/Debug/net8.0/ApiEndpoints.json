@@ -109,6 +109,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MovieBookingSystem.Controllers.CastsController",
+    "Method": "GetCasts",
+    "RelativePath": "api/Casts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MovieBookingSystem.Models.Cast, MovieBookingSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MovieBookingSystem.Controllers.CastsController",
+    "Method": "PostCast",
+    "RelativePath": "api/Casts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cast",
+        "Type": "MovieBookingSystem.DTOs.CastDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MovieBookingSystem.Models.Cast",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MovieBookingSystem.Controllers.CastsController",
+    "Method": "GetCast",
+    "RelativePath": "api/Casts/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MovieBookingSystem.Models.Cast",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MovieBookingSystem.Controllers.CastsController",
+    "Method": "PutCast",
+    "RelativePath": "api/Casts/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cast",
+        "Type": "MovieBookingSystem.Models.Cast",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieBookingSystem.Controllers.CastsController",
+    "Method": "DeleteCast",
+    "RelativePath": "api/Casts/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MovieBookingSystem.Controllers.LoginController",
     "Method": "Login",
     "RelativePath": "api/Login",
@@ -153,8 +262,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "movie",
-        "Type": "MovieBookingSystem.Models.Movie",
+        "Name": "movieDTO",
+        "Type": "MovieBookingSystem.DTOs.MovieDTO",
         "IsRequired": true
       }
     ],
