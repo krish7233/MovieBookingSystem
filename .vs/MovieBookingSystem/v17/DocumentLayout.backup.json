@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\Krishan\\MovieBookingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\moviebookingsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\moviebookingsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\dtos\\moviedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|d:\\krishan\\moviebookingsystem\\moviebookingsystem\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{255C1D57-5167-45B4-8C0A-D57C044A181F}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -109,28 +109,16 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "MovieBookingSystem\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "MovieBookingSystem\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "LoginRequestDTO.cs",
+              "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\DTOs\\LoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "MovieBookingSystem\\DTOs\\LoginRequestDTO.cs",
+              "ToolTip": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\DTOs\\LoginRequestDTO.cs",
+              "RelativeToolTip": "MovieBookingSystem\\DTOs\\LoginRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T17:13:55.026Z",
+              "WhenOpened": "2024-10-01T17:44:24.782Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MovieBookingSystem.csproj",
-              "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\MovieBookingSystem.csproj",
-              "RelativeDocumentMoniker": "MovieBookingSystem\\MovieBookingSystem.csproj",
-              "ToolTip": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\MovieBookingSystem.csproj",
-              "RelativeToolTip": "MovieBookingSystem\\MovieBookingSystem.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-21T08:18:49.779Z"
             },
             {
               "$type": "Document",
@@ -140,27 +128,53 @@
               "RelativeDocumentMoniker": "MovieBookingSystem\\Controllers\\UsersController.cs",
               "ToolTip": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Controllers\\UsersController.cs",
               "RelativeToolTip": "MovieBookingSystem\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAGUAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T07:19:00.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\Repositories\\UserRepository.cs",
               "ToolTip": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "MovieBookingSystem\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAywCEAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T17:16:58.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "MovieBookingSystem\\Services\\LoginService.cs",
+              "ToolTip": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Services\\LoginService.cs",
+              "RelativeToolTip": "MovieBookingSystem\\Services\\LoginService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T17:13:30.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "MovieBookingSystem\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "MovieBookingSystem\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAACEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T18:47:29.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\Services\\UserService.cs",
@@ -173,7 +187,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "MovieBookingSystem.csproj",
+              "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\MovieBookingSystem.csproj",
+              "RelativeDocumentMoniker": "MovieBookingSystem\\MovieBookingSystem.csproj",
+              "ToolTip": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\MovieBookingSystem.csproj",
+              "RelativeToolTip": "MovieBookingSystem\\MovieBookingSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T08:18:49.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MoviesController.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Controllers\\MoviesController.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\Controllers\\MoviesController.cs",
@@ -185,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Program.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\Program.cs",
@@ -197,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Models\\User.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\Models\\User.cs",
@@ -209,19 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "MovieBookingSystem\\Services\\AuthService.cs",
-              "ToolTip": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Services\\AuthService.cs",
-              "RelativeToolTip": "MovieBookingSystem\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T17:13:30.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Movie.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Models\\Movie.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\Models\\Movie.cs",
@@ -233,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MovieDTO.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\DTOs\\MovieDTO.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\DTOs\\MovieDTO.cs",
@@ -245,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Booking.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\Models\\Booking.cs",
@@ -257,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Cast.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Models\\Cast.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\Models\\Cast.cs",
@@ -269,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "MovieBookingDBContext.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\AppDBContexts\\MovieBookingDBContext.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\AppDBContexts\\MovieBookingDBContext.cs",
@@ -281,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CastsController.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Controllers\\CastsController.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\Controllers\\CastsController.cs",
@@ -293,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CastDTO.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\DTOs\\CastDTO.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\DTOs\\CastDTO.cs",
@@ -305,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\appsettings.json",
               "RelativeDocumentMoniker": "MovieBookingSystem\\appsettings.json",
@@ -317,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "CustomExceptionHandelingMiddleware.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\CustomMiddlewares\\CustomExceptionHandelingMiddleware.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\CustomMiddlewares\\CustomExceptionHandelingMiddleware.cs",
@@ -329,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ReleaseDateSearch.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Models\\ReleaseDateSearch.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\Models\\ReleaseDateSearch.cs",
@@ -353,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "UserLogin.cs",
               "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Models\\UserLogin.cs",
               "RelativeDocumentMoniker": "MovieBookingSystem\\Models\\UserLogin.cs",
@@ -362,18 +376,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T18:44:51.986Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "MovieBookingSystem\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\Krishan\\MovieBookingSystem\\MovieBookingSystem\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "MovieBookingSystem\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCoAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T18:47:29.69Z"
             },
             {
               "$type": "Document",

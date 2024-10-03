@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -10,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using MovieBookingSystem.AppDBContexts;
 using MovieBookingSystem.DTOs;
 using MovieBookingSystem.Models;
+using MovieBookingSystem.Services;
 
 namespace MovieBookingSystem.Controllers
 {
@@ -18,22 +20,21 @@ namespace MovieBookingSystem.Controllers
     [ApiController]
     public class MoviesController : ControllerBase
     {
-        private readonly MovieBookingDBContext _context;
+        private readonly MovieService service;
 
-        public MoviesController(MovieBookingDBContext context)
+        public MoviesController(MovieService service)
         {
-            _context = context;
+            this.service = service;
         }
 
         // GET: api/Movies
         [Authorize(Roles = "user,admin")]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<MovieDTO>>> Getmovies()
+        public async Task<ActionResult<List<MovieDTO>>> Getmovies()
         {
-            var result = await _context.movies.Include(m=>m.Bookings).ToListAsync();
-            var movies = GetMoviesDTO(result);
+            var result = await service.GetMovies();
                         
-            return movies;
+            return result;
         }
 
         // GET: api/Movies/5
@@ -46,29 +47,13 @@ namespace MovieBookingSystem.Controllers
                 throw new InvalidDataException("Id is not valid. please enter correct valid id.");
             }
             
-            var movie = await _context.movies.Include(m => m.Bookings).Include(m => m.Casts).FirstOrDefaultAsync(m => m.Id == id);
+            var movieDTO = await service.GetMovieById(id);
 
-            if (movie == null)
+            if (movieDTO == null)
             {
                 return NotFound();
             }
-
-            var bookingLst = new List<BookingDTO>();
-
-            foreach(var booking in movie.Bookings)
-            {
-                bookingLst.Add(new BookingDTO { Id = booking.Id, BookingTime = booking.BookingTime, UserId = booking.UserId});
-            }
-
-            var castLst = new List<CastDTO>();
-
-            foreach(var cast in movie.Casts)
-            {
-                castLst.Add(new CastDTO { Id = cast.Id, Description = cast.Description, Name = cast.Name });
-            }
-
-            var movieDTO = new MovieDTO { Id = movie.Id, Title = movie.Title, Description = movie.Description, ReleaseDate = movie.ReleaseDate, Bookings = bookingLst, casts = castLst};
-
+            
             return movieDTO;
         }
 
@@ -82,23 +67,21 @@ namespace MovieBookingSystem.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(movie).State = EntityState.Modified;
+            if (!service.MovieExists(id))
+            {
+                return NotFound();
+            }
 
             try
             {
-                await _context.SaveChangesAsync();
+                await service.UpdateMovie(movie);
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!MovieExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+            catch (Exception ex) 
+            { 
+                Debug.WriteLine("An unexpected error occurs while updating movie => " + ex.Message);
             }
+
+
 
             return NoContent();
         }
@@ -108,27 +91,13 @@ namespace MovieBookingSystem.Controllers
         [HttpPost]
         public async Task<ActionResult<Movie>> PostMovie(MovieDTO movieDTO)
         {
-            var movieCasts = new List<Cast>();
-            var movieBookings = new List<Booking>();
+            var movie = new Movie();
 
-            foreach(var cast in movieDTO.casts)
-            {
-                movieCasts.Add(new Cast { Id = cast.Id, Name = cast.Name, Description = cast.Description });
-            }
-
-            foreach(var booking in movieDTO.Bookings)
-            {
-                movieBookings.Add(new Booking { Id = booking.Id, UserId =  booking.UserId, BookingTime = booking.BookingTime });
-            }
-
-            var movie = new Movie() { Title = movieDTO.Title, Description = movieDTO.Description, ReleaseDate = movieDTO.ReleaseDate, Casts = movieCasts, Bookings = movieBookings};
-
-            _context.movies.Add(movie);
             try
             {
-                await _context.SaveChangesAsync();
+                movie = await service.SaveMovie(movieDTO);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
@@ -140,14 +109,14 @@ namespace MovieBookingSystem.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteMovie(int id)
         {
-            var movie = await _context.movies.FindAsync(id);
-            if (movie == null)
+            var movieDTO = await service.GetMovieById(id);
+
+            if (movieDTO == null)
             {
                 return NotFound();
             }
 
-            _context.movies.Remove(movie);
-            await _context.SaveChangesAsync();
+            await service.DeleteMovie(movieDTO);
 
             return NoContent();
         }
@@ -210,30 +179,5 @@ namespace MovieBookingSystem.Controllers
         }
 
 
-
-
-        private bool MovieExists(int id)
-        {
-            return _context.movies.Any(e => e.Id == id);
-        }
-
-        private static List<MovieDTO> GetMoviesDTO(List<Movie> result) {
-            var bookings = new List<BookingDTO>();
-            var movies = new List<MovieDTO>();
-
-
-            foreach (var booking in result)
-            {
-                bookings = new List<BookingDTO>();
-                foreach (var bookingItem in booking.Bookings)
-                {
-                    bookings.Add(new BookingDTO { Id = bookingItem.Id, BookingTime = bookingItem.BookingTime, MovieId = bookingItem.MovieId, UserId = bookingItem.UserId });
-                }
-
-                movies.Add(new MovieDTO { Id = booking.Id, Title = booking.Title, Description = booking.Description, ReleaseDate = booking.ReleaseDate, Bookings = bookings });
-            }
-
-            return movies;
-        }
     }
 }
